@@ -24,7 +24,7 @@ public class scene3controller {
     @FXML private TableColumn<CourseRow, Double> colWeighted;
 
     @FXML private Text gpaText;
-    @FXML private Text usedCreditText; // optional: show how many credits were used in GPA
+    @FXML private Text usedCreditText;
 
     @FXML
     public void initialize() {

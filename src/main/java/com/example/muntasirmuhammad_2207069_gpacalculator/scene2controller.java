@@ -24,7 +24,7 @@ public class scene2controller {
     private final List<Course> courses = new ArrayList<>();
 
     // Max credit and current credit tracker
-    private double maxCredit = 12.0; // default if nothing entered
+    private double maxCredit = 12.0;
     private double currentCredit = 0;
 
     // Initialize method
@@ -84,15 +84,11 @@ public class scene2controller {
                                 ".\nYou may now calculate GPA.");
                 return;
             }
-
-            // Add course
             Course newCourse = new Course(name, code, credit, teacher1, teacher2, grade);
             courses.add(newCourse);
             currentCredit += credit;
 
             clearFields();
-
-            // Enable GPA calculation if max credit reached
             if (currentCredit >= maxCredit) {
                 calculateGpaButton.setDisable(false);
             }
@@ -102,7 +98,7 @@ public class scene2controller {
         }
     }
 
-    // Calculate GPA
+
     @FXML
     private void calculateGPA() throws IOException {
 
@@ -131,7 +127,7 @@ public class scene2controller {
         stage.show();
     }
 
-    // Clear input fields
+
     private void clearFields() {
         nameField.clear();
         codeField.clear();
@@ -140,8 +136,6 @@ public class scene2controller {
         teacher2Field.clear();
         gradeBox.getSelectionModel().clearSelection();
     }
-
-    // Show alert
     private void showAlert(String title, String message) {
         Alert alert = new Alert(Alert.AlertType.INFORMATION);
         alert.setTitle(title);
@@ -150,7 +144,7 @@ public class scene2controller {
         alert.showAndWait();
     }
 
-    // Course class
+
     public static class Course {
         private final String name, code, teacher1, teacher2, grade;
         private final double credit;

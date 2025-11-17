@@ -17,7 +17,7 @@ public class scene1controller {
     @FXML
     private void goToScene2(ActionEvent event) throws IOException {
         Parent root = FXMLLoader.load(getClass().getResource("scene2.fxml"));
-        Stage stage = (Stage) startButton.getScene().getWindow(); // reuse current window
+        Stage stage = (Stage) startButton.getScene().getWindow();
         Scene scene2 = new Scene(root);
         stage.setScene(scene2);
         stage.setTitle("CGPA Calculator - Enter Courses");
