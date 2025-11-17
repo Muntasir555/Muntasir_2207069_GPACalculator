@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+
+<StackPane xmlns="http://javafx.com/javafx"
+           xmlns:fx="http://javafx.com/fxml"
+           fx:controller="com.example.muntasirmuhammad_2207069_gpacalculator.scene3controller"
+           style="-fx-background-color: linear-gradient(to bottom, #43e97b, #38f9d7);">
+
+    <VBox spacing="25" alignment="TOP_CENTER"
+          style="-fx-background-color: white;
+                 -fx-background-radius: 20;
+                 -fx-padding: 30;
+                 -fx-max-width: 750;
+                 -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.25), 20, 0.3, 0, 5);">
+
+        <Text text="GPA Summary"
+              style="-fx-font-size: 30px; -fx-fill: #333; -fx-font-weight: bold;" />
+
+        <TableView fx:id="tableView" prefHeight="350" style="-fx-background-radius: 10;">
+            <columns>
+
+                <TableColumn fx:id="colName" text="Course Name" prefWidth="180"/>
+                <TableColumn fx:id="colCode" text="Code" prefWidth="80"/>
+                <TableColumn fx:id="colGrade" text="Grade" prefWidth="70"/>
+                <TableColumn fx:id="colCredit" text="Credit" prefWidth="70"/>
+                <TableColumn fx:id="colPoint" text="Grade Point" prefWidth="100"/>
+                <TableColumn fx:id="colWeighted" text="Weighted GPA" prefWidth="120"/>
+
+            </columns>
+        </TableView>
+
+        <Text fx:id="gpaText" style="-fx-font-size: 22px; -fx-fill: #444; -fx-font-weight: bold;" />
+
+        <Button text="Back"
+                onAction="#goBack"
+                style="-fx-background-color: #4facfe;
+                       -fx-text-fill: white;
+                       -fx-font-size: 16px;
+                       -fx-background-radius: 10;
+                       -fx-padding: 10 30;" />
+
+    </VBox>
+</StackPane>
