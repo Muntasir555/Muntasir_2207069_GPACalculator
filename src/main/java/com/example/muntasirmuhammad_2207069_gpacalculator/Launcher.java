@@ -18,6 +18,7 @@ public class Launcher extends Application {
         Parent root = FXMLLoader.load(getClass().getResource("scene1.fxml"));
 
         Scene scene = new Scene(root);
+        stage.setTitle("GPA Calculator");
         stage.setScene(scene);
         stage.show();
     }

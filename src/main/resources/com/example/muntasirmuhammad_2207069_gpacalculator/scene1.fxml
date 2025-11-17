@@ -6,7 +6,7 @@
 <?import javafx.scene.text.Font?>
 
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-effect: dropshadow(gaussian, rgba(0,0,0,0.25), 20, 0.3, 0, 5);" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-effect: dropshadow(gaussian, rgba(0,0,0,0.25), 20, 0.3, 0, 5); -fx-background-color: Orange;" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.muntasirmuhammad_2207069_gpacalculator.scene1controller">
    <children>
       <Label layoutX="261.0" layoutY="120.0" prefHeight="17.0" prefWidth="25.0" />
       <Label layoutX="76.0" layoutY="101.0" style="-fx-text-fill: WHITE; -fx-background-color: BLUE; -fx-border-color: RED;" text="Welcome to CGPA Calculator">
@@ -14,7 +14,7 @@
             <Font size="36.0" />
          </font>
       </Label>
-      <Button layoutX="211.0" layoutY="266.0" mnemonicParsing="false" style="-fx-background-color: Yellow; -fx-background-radius: 10; -fx-text-fill: BLUE;" text="Calculate Your CGA">
+      <Button layoutX="211.0" layoutY="225.0" mnemonicParsing="false" style="-fx-background-color: Yellow; -fx-background-radius: 10; -fx-text-fill: BLUE;" text="Calculate Your CGA">
          <font>
             <Font size="18.0" />
          </font>
